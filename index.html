@@ -7,9 +7,210 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/main.js" defer></script>
-    <title>Document</title>
+    <title>Adventure of Little Red</title>
   </head>
-  <body>
-    Hello, world!
+  <body class="scrolling-wrapper">
+    <div class="card" id="card1">
+      <h1>Adventure of Little Red</h1>
+      <a href="#card2"
+        ><img src="./images/lilred.png" alt="littlered" class="mainfigure"
+      /></a>
+      <div>
+        <p class="prompt"><u>Click on little red to began story</u></p>
+      </div>
+    </div>
+
+    <div class="card" id="card2">
+      <h1>Adventure of Little Red</h1>
+      <p class="text">
+        Once upon, a girl always wore a little riding hood of red velvet, so
+        everyone called her "Little Red." One morning Little Red wanted to visit
+        her Grandma. So she packed one of her most delicate cakes so she could
+        enjoy it with her.
+      </p>
+      <div class="element-container element-container2">
+        <img src="./images/poptartresized.png" alt="cake" draggable="true" />
+        <img
+          src="./images/lilred.png"
+          alt="littlered"
+          class="dropzone"
+          draggable="false"
+        />
+      </div>
+      <p class="prompt">
+        <u>Help Lttle Red get ready by dragging the cake to her</u>
+      </p>
+    </div>
+
+    <div class="card" id="card3">
+      <h1>Adventure of Little Red</h1>
+      <div class="text-div">
+        <p class="text">
+          Now that Little Red is ready, she begins her journey to her Grandma's
+          house. But to get there, she must first cross the scary dark forest.
+        </p>
+      </div>
+      <div class="element-container element-container3">
+        <img
+          src="./images/lilred_right.png"
+          alt="littlered"
+          class="drag"
+          draggable="true"
+        />
+        <img
+          src="./images/spookyforerst.png"
+          alt="spookyforerst"
+          class="dropzone"
+          draggable="false"
+        />
+      </div>
+      <p class="prompt">
+        <u>Encourage Little Red by dragging her to the forest</u>
+      </p>
+    </div>
+
+    <div class="card" id="card4">
+      <h1>Adventure of Little Red</h1>
+      <div class="text-div">
+        <p class="text">
+          Just as Little Red entered the forest, she heard a loud growling from
+          a distance. It was a Wolf, and the sound was coming from his stomach.
+          Little Red being the polite girl, greeted the Wolf and told him her
+          whole plan of visiting her Grandma. The Wolf nodded, and Little Red
+          happily walked by him.
+        </p>
+      </div>
+      <div class="element-container element-container4">
+        <img
+          src="./images/lilred_right.png"
+          alt="littlered"
+          class="drag"
+          draggable="true"
+        />
+        <img src="./images/bigbadwolf.png" alt="bigbadwolf" draggable="false" />
+        <div class="dropzone"></div>
+      </div>
+      <p class="prompt"><u>Drag Little Red behind the Wolf to advance</u></p>
+    </div>
+
+    <div class="card" id="card5">
+      <h1>Adventure of Little Red</h1>
+      <div class="text-div">
+        <p class="text">
+          After a long walk in the forest, Little Red finally made it out, but
+          she was greeted by a fork road leading to two different houses. Little
+          Red seems confused and is puzzled about which leads to her Grandma's
+          house.
+        </p>
+      </div>
+      <div class="element-container element-container5">
+        <img src="./images/cottage.png" alt="cottage" draggable="false" />
+        <img src="./images/lilred_right.png" alt="lilred" draggable="true" />
+        <img
+          src="./images/grandmahouse.png"
+          alt="grandmahouse"
+          class="dropzone"
+          draggable="false"
+        />
+      </div>
+      <p class="prompt">
+        <u>Help Little Red by dragging her to grandma's house</u>
+      </p>
+    </div>
+
+    <div class="card" id="card6">
+      <h1>Adventure of Little Red</h1>
+      <div class="text-div">
+        <p class="text">
+          Thankfully, Little Red ends up at the right house and is very excited
+          to see her Grandma. However, upon the first glimpse, Grandma's face
+          seems slightly off.
+        </p>
+      </div>
+      <div class="element-container element-container6">
+        <img src="./images/lilred_right.png" alt="lilred" draggable="false" />
+        <a href="#card7" class="reveal">
+          <img
+            src="./images/bigbadwold_grandma.png"
+            alt="fakegrandma"
+            draggable="false"
+          />
+          <img src="./images/bigbadwolf.png" alt="wolf" draggable="false" />
+        </a>
+      </div>
+      <p class="prompt">
+        <u>Hover over Grandma with pointer to reveal and click to advance</u>
+      </p>
+    </div>
+
+    <div class="card" id="card7">
+      <h1>Adventure of Little Red</h1>
+      <div class="text-div">
+        <p class="text">
+          Little Red let out a loud scream as she recognized the person standing
+          in front of her was the Wolf she had met earlier, who had eaten her
+          Grandma. Coincidently, the Hunter who happens to be outside the house
+          hears the scream.
+        </p>
+      </div>
+      <div class="element-container element-container7">
+        <img
+          src="./images/yellowcar.png"
+          alt="hunterwithcar"
+          class="drag"
+          draggable="true"
+        />
+        <img
+          src="./images/housewithroom.png"
+          alt="housewithroom"
+          class="dropzone"
+          draggable="false"
+        />
+      </div>
+      <p class="prompt"><u>Rescue Little Red by dragging Hunter to house</u></p>
+    </div>
+
+    <div class="card" id="card8">
+      <h1>Adventure of Little Red</h1>
+      <div class="text-div">
+        <p class="text">
+          The Hunter then went inside the Camaro and drove it straight into the
+          room, running over the Wolf. Vroom! Gladly, Wolf's body acted as
+          padding for Grandma to survive the hit.
+        </p>
+      </div>
+      <div class="element-container element-container8">
+        <img
+          src="./images/yellowcar_speed.png"
+          alt="hunterwithcar"
+          draggable="false"
+        />
+        <a href="#card9" class="reveal">
+          <img
+            src="./images/wolf_speed.png"
+            alt="wolfhitbycar"
+            draggable="false"
+          />
+          <img src="./images/grandma.png" alt="grandma" draggable="false" />
+        </a>
+      </div>
+      <p class="prompt"><u>Drag little red to forest to advance</u></p>
+    </div>
+
+    <div class="card" id="card9">
+      <h1>Adventure of Little Red</h1>
+      <div class="text-div">
+        <p class="text">
+          Little Red goes over to Grandma. She gives her a big hug and shares
+          some delicious cake. They live happily ever after.
+        </p>
+      </div>
+      <div class="last_element-container element-container9">
+        <a href="javascript:history.go(0)">
+          <img src="./images/ending.png" alt="ending" draggable="false" />
+        </a>
+      </div>
+      <p class="prompt"><u>Click on cake to replay the story</u></p>
+    </div>
   </body>
 </html>
