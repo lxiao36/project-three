@@ -20,5 +20,6 @@
     "**/.github": true,
     "**/.vscode": true
   },
-  "liveServer.settings.root": "/src"
+  "liveServer.settings.root": "/src",
+  "liveServer.settings.port": 5501
 }

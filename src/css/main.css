@@ -1,7 +1,287 @@
-/* Decent Defaults */
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Indie+Flower&family=Shadows+Into+Light&display=swap");
+* {
+  overflow-y: hidden;
+}
 
-img,
-video {
-  width: 100%;
+h1 {
+  font-size: 3vw;
+  font-family: "Shadows Into Light", cursive;
+  margin-top: 20px;
+}
+
+.scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card {
+  flex: 0 0 auto;
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  background-position: center center;
+  align-items: center;
+}
+
+#card1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  background-size: cover;
+  background-image: url(../images/house1.png);
+  background-repeat: no-repeat;
+  animation-name: houses;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes houses {
+  0% {
+    background-image: url(../images/house1.png);
+  }
+  16% {
+    background-image: url(../images/house2.png);
+  }
+  33% {
+    background-image: url(../images/house3.png);
+  }
+  50% {
+    background-image: url(../images/house4.png);
+  }
+  65% {
+    background-image: url(../images/house5.png);
+  }
+  81% {
+    background-image: url(../images/house6.png);
+  }
+  100% {
+    background-image: url(../images/house1.png);
+  }
+}
+
+#card2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/bg.png);
+}
+
+#card3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/bg.png);
+}
+
+#card4 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/forest1.png);
+  animation-name: forest;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes forest {
+  0% {
+    background-image: url(../images/forest1.png);
+  }
+  50% {
+    background-image: url(../images/forest2.png);
+  }
+  100% {
+    background-image: url(../images/forest3.png);
+  }
+}
+
+#card5 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/bg.png);
+}
+
+#card6 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/bed.png);
+}
+
+#card7 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/bg.png);
+}
+
+#card8 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/bed.png);
+}
+
+#card9 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/bg.png);
+}
+
+.mainfigure {
+  max-width: 60vw;
+  align-items: center;
+}
+
+img.reveal:last-child {
+  display: none;
+}
+.reveal:hover img:last-child {
+  display: block;
+}
+.reveal:hover img:first-child {
+  display: none;
+}
+
+div.dropzone {
+  width: 90vw;
   height: auto;
+  margin-bottom: 10px;
+  padding: 5vw;
+}
+
+.text {
+  max-width: 50vw;
+  font-size: 26px;
+  text-align: justify;
+  align-items: center;
+  font-family: "Indie Flower", cursive;
+  margin-top: 45px;
+}
+
+.element-container {
+  display: flex;
+  max-width: 80vw;
+  max-height: 500px;
+}
+
+.element-container2 {
+  max-height: 50vh;
+}
+
+.element-container6 {
+  max-height: 50vh;
+}
+
+.element-container8 {
+  max-height: 50vh;
+}
+
+.last_element-container {
+  width: 36vw;
+}
+
+.prompt {
+  font-size: 25px;
+  margin-bottom: 30px;
+  color: rgba(59, 38, 16, 0.67);
+  font-family: "Indie Flower", cursive;
+}
+
+@media (max-width: 858px) {
+  #card1 {
+    background-size: contain;
+  }
+  #card2 {
+    background-size: contain;
+  }
+  #card3 {
+    background-size: contain;
+  }
+  #card4 {
+    background-size: contain;
+  }
+  #card5 {
+    background-size: contain;
+  }
+  #card6 {
+    background-size: contain;
+  }
+  #card7 {
+    background-size: contain;
+  }
+  #card8 {
+    background-size: contain;
+  }
+  #card9 {
+    background-size: contain;
+  }
+  h1 {
+    margin-top: 15px;
+    font-size: 35px;
+  }
+  .text {
+    max-width: 80vw;
+    font-size: 15px;
+  }
+  .prompt {
+    margin-top: 80px;
+    font-size: 13px;
+  }
+  .element-container {
+    margin-bottom: 130px;
+    display: flex;
+    max-width: 80vw;
+    max-height: 550px;
+  }
+  .element-container4 {
+    margin-bottom: 150px;
+  }
+  .element-container6 {
+    margin-bottom: 100px;
+    max-height: 120px;
+  }
+
+  .element-container8 {
+    margin-bottom: 150px;
+    max-height: 120px;
+  }
+
+  .element-container9 {
+    margin-bottom: 130px;
+  }
+
+  .mainfigure {
+    margin-top: 100px;
+  }
 }
